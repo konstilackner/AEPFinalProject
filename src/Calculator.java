@@ -32,4 +32,8 @@ public class Calculator {
     public double square() {
         return this.amount * this.amount;
     }
+
+    public double log() {
+        return Math.log(this.amount);
+    }
 }

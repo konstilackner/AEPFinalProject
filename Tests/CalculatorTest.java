@@ -85,4 +85,10 @@ public class CalculatorTest {
         Calculator ten = new Calculator(10.0);
         assertEquals(100.0, ten.square());
     }
+
+    @Test
+    public void Log1isZero(){
+        Calculator one = new Calculator(1.0);
+        assertEquals(0.0, one.log());
+    }
 }
