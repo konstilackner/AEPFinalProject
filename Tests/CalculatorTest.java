@@ -97,4 +97,10 @@ public class CalculatorTest {
         Calculator ten = new Calculator(10.0);
         assertEquals(5.0, ten.divide(2));
     }
+
+    @Test
+    public void OneByOneIsOne(){
+        Calculator one = new Calculator(1.0);
+        assertEquals(1.0, one.multiply(1.0));
+    }
 }
