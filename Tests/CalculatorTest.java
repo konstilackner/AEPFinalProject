@@ -18,4 +18,10 @@ public class CalculatorTest {
         Calculator five = new Calculator(5.0);
         assertEquals(15.0, five.add(10.0));
     }
+
+    @Test
+    public void MultiplyFivebyTwoIsTen(){
+        Calculator five = new Calculator(5.0);
+        assertEquals(10.0, five.multiply(2.0));
+    }
 }

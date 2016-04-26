@@ -12,4 +12,8 @@ public class Calculator {
     public double add(double i) {
         return this.amount + i;
     }
+
+    public double multiply(double v) {
+        return this.amount * v;
+    }
 }
