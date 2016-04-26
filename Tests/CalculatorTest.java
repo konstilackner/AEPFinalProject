@@ -24,4 +24,16 @@ public class CalculatorTest {
         Calculator five = new Calculator(5.0);
         assertEquals(10.0, five.multiply(2.0));
     }
+
+    @Test
+    public void MultiplyTenbyTenIsHundred(){
+        Calculator ten = new Calculator(10.0);
+        assertEquals(100.0, ten.multiply(10.0));
+    }
+
+    @Test
+    public void Multiply1by1is1(){
+        Calculator one = new Calculator(1.0);
+        assertEquals(1.0, one.multiply(1.0));
+    }
 }
