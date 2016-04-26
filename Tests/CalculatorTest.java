@@ -36,4 +36,16 @@ public class CalculatorTest {
         Calculator one = new Calculator(1.0);
         assertEquals(1.0, one.multiply(1.0));
     }
+
+    @Test
+    public void Subtract10from20is10(){
+        Calculator twenty = new Calculator(20.0);
+        assertEquals(10.0, twenty.subtract(10.0));
+    }
+
+    @Test
+    public void Subtract100from0IsMinuesHundred(){
+        Calculator zero = new Calculator(0.0);
+        assertEquals(-100.0, zero.subtract(100.0));
+    }
 }
