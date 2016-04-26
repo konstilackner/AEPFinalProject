@@ -48,4 +48,16 @@ public class CalculatorTest {
         Calculator zero = new Calculator(0.0);
         assertEquals(-100.0, zero.subtract(100.0));
     }
+
+    @Test
+    public void DivideANumberByItsValueIsOne(){
+        Calculator ten = new Calculator(10.0);
+        assertEquals(1.0, ten.divide(ten.amount));
+    }
+
+    @Test
+    public void DivideFourtyByFourIs10(){
+        Calculator fourty = new Calculator(40.0);
+        assertEquals(10.0, fourty.divide(4.0));
+    }
 }

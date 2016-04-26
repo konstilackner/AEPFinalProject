@@ -3,7 +3,7 @@
  */
 public class Calculator {
 
-    private final double amount;
+    public final double amount;
 
     public Calculator(double amount) {
         this.amount = amount;
@@ -19,5 +19,9 @@ public class Calculator {
 
     public double subtract(double v) {
         return this.amount - v;
+    }
+
+    public double divide(double v) {
+        return this.amount / v;
     }
 }
