@@ -24,4 +24,8 @@ public class Calculator {
     public double divide(double v) {
         return this.amount / v;
     }
+
+    public double sqrt() {
+        return Math.sqrt(this.amount);
+    }
 }

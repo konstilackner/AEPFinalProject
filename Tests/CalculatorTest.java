@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import static junit.framework.Assert.assertTrue;
 import static junit.framework.TestCase.assertEquals;
 
 /**
@@ -59,5 +60,17 @@ public class CalculatorTest {
     public void DivideFourtyByFourIs10(){
         Calculator fourty = new Calculator(40.0);
         assertEquals(10.0, fourty.divide(4.0));
+    }
+
+    @Test
+    public void SqrtOfFourIsTwo(){
+        Calculator four = new Calculator(4.0);
+        assertEquals(2.0, four.sqrt());
+    }
+
+    @Test
+    public void SqrtOfNegativeOneIsNaN(){
+        Calculator minusone = new Calculator(-1.0);
+        assertTrue(Double.isNaN(minusone.sqrt()));
     }
 }
