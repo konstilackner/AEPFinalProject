@@ -91,4 +91,10 @@ public class CalculatorTest {
         Calculator one = new Calculator(1.0);
         assertEquals(0.0, one.log());
     }
+
+    @Test
+    public void Divide10ByTwoIs5(){
+        Calculator ten = new Calculator(10.0);
+        assertEquals(5.0, ten.divide(2));
+    }
 }
