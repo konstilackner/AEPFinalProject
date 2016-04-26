@@ -28,4 +28,8 @@ public class Calculator {
     public double sqrt() {
         return Math.sqrt(this.amount);
     }
+
+    public double square() {
+        return this.amount * this.amount;
+    }
 }

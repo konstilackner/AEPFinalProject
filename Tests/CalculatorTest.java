@@ -73,4 +73,16 @@ public class CalculatorTest {
         Calculator minusone = new Calculator(-1.0);
         assertTrue(Double.isNaN(minusone.sqrt()));
     }
+
+    @Test
+    public void SquareTwoIsFour(){
+        Calculator two = new Calculator(2.0);
+        assertEquals(4.0, two.square());
+    }
+
+    @Test
+    public void Square10IsHundred(){
+        Calculator ten = new Calculator(10.0);
+        assertEquals(100.0, ten.square());
+    }
 }
